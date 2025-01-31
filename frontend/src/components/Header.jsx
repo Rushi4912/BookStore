@@ -45,7 +45,7 @@ const Header = () => {
                     {/* Logo */}
                     <Link to="/" className="flexStart gap-2">
                         <img src={logo} alt="Bacala" className="w-9 h-9" />
-                        <span className="bold-24">BookStore</span>
+                        <span className="bold-24">Padhai</span>
                     </Link>
 
                     {/* Navigation */}

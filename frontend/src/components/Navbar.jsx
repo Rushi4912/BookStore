@@ -16,7 +16,7 @@ const Navbar = ({ containerStyles, toggleMenu, menuOpened }) => {
                 <>
                     <FaRegWindowClose onClick={toggleMenu} className='text-xl self-end cursor-pointer relative left-8' />
                     <Link to="/" className="bold-24 mb-10">
-                        <h4 className='text-secondary'>Bacala</h4>
+                        <h4 className='text-secondary'>PADHAI</h4>
                     </Link>
                 </>
             )}
