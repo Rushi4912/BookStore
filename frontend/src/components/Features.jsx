@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react';
 
  const Features = () => {
+  const[data,setdata] = useState(0);
+  
   return (
-    <div>Features</div>
+    <div>Features </div>
   )
 }
 export default Features;

@@ -13,10 +13,15 @@ export  const Home = () => {
     <NewArrivals/>
     <About/>
     <PopularBooks/>
+    
     <Features/>
-    <div className='max-padd-container bg-white'>
-
+ 
+    <div className='max-padd-container bg-zinc-300'>
     <Footer/>
+
+    </div>
+  
+    <div className='max-padd-container bg-white'>
     </div>
   
     </>

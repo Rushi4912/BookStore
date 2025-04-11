@@ -452,6 +452,17 @@ export const books = [
         date: 1716634345448,
         popular: true,
     },
+    {
+        _id: "37",
+        name: "Spiritual Wisdom",
+        image: book_36,
+        price: 25,
+        description: "Timeless lessons for personal and spiritual growth.",
+        category: "Religious",
+        date: 1716634345448,
+        popular: true,
+    },
+    
 
 ];
 

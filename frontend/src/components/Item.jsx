@@ -4,7 +4,7 @@ import { TbShoppingBagPlus } from 'react-icons/tb';
 const Item = ({ book }) => {
   return (
     <div>
-      <div className='flexCenter bg-primary p-6 rounded-3xl overflow-hidden relative group'>
+      <div className='flexCenter bg-primary p-6 rounded-3xl overflow-hidden relative group '>
         <img src={book.image} alt="booking" className='shadow-xl shadow-slate-900/30 rounded-lg'/>
       </div>
       <div className='p-3'>
