@@ -91,7 +91,6 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <div className="h-[70px]"></div>
         </>
     )
 }

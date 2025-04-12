@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="pt-[72px]">
+      <main className="pt-[60px]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />

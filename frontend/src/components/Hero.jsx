@@ -5,7 +5,7 @@ import pencil from "../assets/pencil.png";
 
 const Hero = () => {
   return (
-    <section className='max-padd-container pt-0 mt-0 pb-20 xl:py-36'>
+    <section className='max-padd-container pt-0 mt-0 pb-20 xl:py-24'>
         <div className='flexCenter gap-12 flex-col xl:flex-row'>
 
             {/* Left side */}
