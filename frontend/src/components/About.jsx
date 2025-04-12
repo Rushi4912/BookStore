@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from './Title';
-import { TbTruckReturn } from 'react-icons/tb';
+import { TbTruckReturn, TbCreditCard, TbHeadset } from 'react-icons/tb';
 import about from "../assets/book_1.png";
 
 const About = () => {
@@ -26,7 +26,7 @@ const About = () => {
             {/* Secure Payments */}
             <div className='flexCenter gap-x-4'>
               <div className='h-16 min-w-16 bg-secondaryOne flexCenter rounded-md'>
-                <TbTruckReturn className='text-2xl' />
+                <TbCreditCard className='text-2xl' />
               </div>
               <div>
                 <h4 className='medium-18'>Secure Payments Options</h4>
@@ -37,7 +37,7 @@ const About = () => {
             {/* Live Customer Support */}
             <div className='flexCenter gap-x-4'>
               <div className='h-16 min-w-16 bg-secondaryOne flexCenter rounded-md'>
-                <TbTruckReturn className='text-2xl' />
+                <TbHeadset className='text-2xl' />
               </div>
               <div>
                 <h4 className='medium-18'>Live Customer Support</h4>

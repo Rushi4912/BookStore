@@ -8,7 +8,7 @@ const Item = ({ book }) => {
         <img src={book.image} alt="booking" className='shadow-xl shadow-slate-900/30 rounded-lg'/>
       </div>
       <div className='p-3'>
-        <div>
+        <div className='flexBetween'>
           <h4 className='h4 line-clamp-1 lmy-0'>{book.name}</h4>
           <span className='flexCenter h-8 w-8 rounded cursor-pointer'>
             <TbShoppingBagPlus className='text-lg'/>
