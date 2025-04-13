@@ -5,7 +5,6 @@ import About from "../components/About";
 import PopularBooks from "../components/PopularBooks";
 import Features from "../components/Features";
 import Footer from "../components/Footer";
-
 export  const Home = () => {
   return (
     <>
