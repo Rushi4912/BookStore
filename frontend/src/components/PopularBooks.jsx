@@ -2,6 +2,10 @@ import React from 'react';
 import Title from './Title';
 import Item from './Item';
 import { books } from '../assets/data';
+import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Autoplay, Pagination } from "swiper/modules";
 
 const PopularBooks = () => {
   // Filter popular books
@@ -16,11 +20,41 @@ const PopularBooks = () => {
         paraStyles={'!block'}
       />
       
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 xl:gap-8'>
+      <Swiper
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false
+        }}
+        pagination={{
+          clickable: true
+        }}
+        breakpoints={{
+          400: {
+            slidesPerView: 2,
+            spaceBetween: 30
+          },
+          700: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30
+          },
+          1200: {
+            slidesPerView: 5,
+            spaceBetween: 30
+          }
+        }}
+        modules={[Pagination, Autoplay]}  
+        className='h-[455px] sm:h-[488px] xl:h-[499px] mt-5'
+      >
         {popularBooks.map((book) => (
-          <Item key={book._id} book={book} />
+          <SwiperSlide key={book._id}>
+            <Item book={book} />
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   );
 };
