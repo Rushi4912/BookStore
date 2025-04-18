@@ -5,9 +5,8 @@ import { books } from '../assets/data';
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import 'swiper/css/navigation';
-import 'swiper/css/effect-fade';
 
 const PopularBooks = () => {
   // Filter popular books
@@ -43,10 +42,6 @@ const PopularBooks = () => {
             },
           }}
           navigation={true}
-          effect="fade"
-          fadeEffect={{
-            crossFade: true
-          }}
           breakpoints={{
             400: {
               slidesPerView: 2,
@@ -65,7 +60,7 @@ const PopularBooks = () => {
               spaceBetween: 24
             }
           }}
-          modules={[Pagination, Autoplay, Navigation, EffectFade]}  
+          modules={[Pagination, Autoplay, Navigation]}  
           className='h-[455px] sm:h-[488px] xl:h-[499px] mt-5 mb-12'
         >
           {firstRowBooks.map((book) => (
@@ -74,6 +69,8 @@ const PopularBooks = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        {/* Gradient overlay for better visual hierarchy */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-transparent group-hover:from-white/5 group-hover:via-transparent group-hover:to-white/5 pointer-events-none"></div>
       </div>
       
       {/* Second Row */}
@@ -91,10 +88,6 @@ const PopularBooks = () => {
             },
           }}
           navigation={true}
-          effect="fade"
-          fadeEffect={{
-            crossFade: true
-          }}
           breakpoints={{
             400: {
               slidesPerView: 2,
@@ -113,7 +106,7 @@ const PopularBooks = () => {
               spaceBetween: 24
             }
           }}
-          modules={[Pagination, Autoplay, Navigation, EffectFade]}  
+          modules={[Pagination, Autoplay, Navigation]}  
           className='h-[455px] sm:h-[488px] xl:h-[499px]'
         >
           {secondRowBooks.map((book) => (
@@ -122,6 +115,8 @@ const PopularBooks = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        {/* Gradient overlay for better visual hierarchy */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-transparent group-hover:from-white/5 group-hover:via-transparent group-hover:to-white/5 pointer-events-none"></div>
       </div>
       
       {/* Custom CSS for pagination bullets and navigation */}
@@ -148,6 +143,14 @@ const PopularBooks = () => {
           box-shadow: 0 4px 12px rgba(0,0,0,0.1);
           transition: all 0.3s ease;
           opacity: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .swiper-button-next {
+          right: 10px;
+        }
+        .swiper-button-prev {
+          left: 10px;
         }
         .group:hover .swiper-button-next,
         .group:hover .swiper-button-prev {
@@ -156,7 +159,7 @@ const PopularBooks = () => {
         .swiper-button-next:hover, .swiper-button-prev:hover {
           background: #fff;
           box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-          transform: scale(1.05);
+          transform: translateY(-50%) scale(1.05);
         }
         .swiper-button-next:after, .swiper-button-prev:after {
           font-size: 16px;
@@ -167,6 +170,9 @@ const PopularBooks = () => {
         }
         .swiper-slide:hover {
           transform: translateY(-5px);
+        }
+        .swiper-pagination {
+          bottom: 0 !important;
         }
       `}</style>
     </section>
