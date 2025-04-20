@@ -31,10 +31,10 @@ const Features = () => {
   ];
   
   return (
-    <section className="max-padd-container py-16 xl:py-28 relative overflow-hidden">
+    <section className="max-padd-container py-16 xl:py-28 relative overflow-hidden bg-white">
       {/* Background decorative elements */}
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/5 rounded-full -z-10"></div>
-      <div className="absolute top-0 right-0 w-48 h-48 bg-primary/5 rounded-full -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-gray-50 rounded-full -z-10"></div>
+      <div className="absolute top-0 right-0 w-48 h-48 bg-gray-50 rounded-full -z-10"></div>
       
       <div className="text-center mb-16">
         <Title 
@@ -52,9 +52,9 @@ const Features = () => {
         {features.map((feature) => (
           <div 
             key={feature.id} 
-            className="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 group border border-gray-100"
+            className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group border border-gray-100"
           >
-            <div className="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors duration-300 text-primary">
+            <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-gray-100 transition-colors duration-300 text-primary">
               {feature.icon}
             </div>
             <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">{feature.title}</h3>
@@ -66,7 +66,7 @@ const Features = () => {
       {/* Additional feature highlights */}
       <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Book Club CTA */}
-        <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+        <div className="bg-white rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
           <div className="md:w-2/3">
             <div className="flex items-center gap-3 mb-4">
               <FaBookOpen className="text-2xl text-primary" />
@@ -81,14 +81,14 @@ const Features = () => {
             </button>
           </div>
           <div className="md:w-1/3 flex justify-center">
-            <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-inner">
+            <div className="w-32 h-32 bg-gray-50 rounded-full flex items-center justify-center shadow-sm">
               <div className="text-5xl">📚</div>
             </div>
           </div>
         </div>
         
         {/* Gift Card CTA */}
-        <div className="bg-gradient-to-br from-secondary/5 to-primary/5 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+        <div className="bg-white rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
           <div className="md:w-2/3">
             <div className="flex items-center gap-3 mb-4">
               <FaGift className="text-2xl text-primary" />
@@ -103,7 +103,7 @@ const Features = () => {
             </button>
           </div>
           <div className="md:w-1/3 flex justify-center">
-            <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-inner">
+            <div className="w-32 h-32 bg-gray-50 rounded-full flex items-center justify-center shadow-sm">
               <div className="text-5xl">🎁</div>
             </div>
           </div>
