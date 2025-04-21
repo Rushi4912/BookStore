@@ -76,7 +76,7 @@ const Features = () => {
               Get exclusive access to new releases, author events, and special discounts. 
               Our book club members receive 10% off all purchases and free shipping on orders over $50.
             </p>
-            <button className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors duration-300 font-medium">
+            <button className="bg-primary text-white px-8 py-3.5 rounded-lg hover:bg-primary/90 transition-colors duration-300 font-semibold text-lg shadow-sm hover:shadow">
               Sign Up Now
             </button>
           </div>
@@ -98,7 +98,7 @@ const Features = () => {
               Looking for the perfect gift? Our gift cards are the ideal choice for any book lover.
               Available in denominations from $25 to $200, with no expiration date.
             </p>
-            <button className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors duration-300 font-medium">
+            <button className="bg-primary text-white px-8 py-3.5 rounded-lg hover:bg-primary/90 transition-colors duration-300 font-semibold text-lg shadow-sm hover:shadow">
               Shop Gift Cards
             </button>
           </div>
@@ -114,20 +114,20 @@ const Features = () => {
       <div className="mt-16 pt-8 border-t border-gray-100">
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-1">10K+</div>
-            <div className="text-gray-600">Happy Customers</div>
+            <div className="text-4xl font-bold text-primary mb-2">10K+</div>
+            <div className="text-gray-700 font-medium">Happy Customers</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-1">50K+</div>
-            <div className="text-gray-600">Books Available</div>
+            <div className="text-4xl font-bold text-primary mb-2">50K+</div>
+            <div className="text-gray-700 font-medium">Books Available</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-1">100+</div>
-            <div className="text-gray-600">Author Events</div>
+            <div className="text-4xl font-bold text-primary mb-2">100+</div>
+            <div className="text-gray-700 font-medium">Author Events</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-1">24/7</div>
-            <div className="text-gray-600">Customer Support</div>
+            <div className="text-4xl font-bold text-primary mb-2">24/7</div>
+            <div className="text-gray-700 font-medium">Customer Support</div>
           </div>
         </div>
       </div>
