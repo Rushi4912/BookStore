@@ -52,8 +52,11 @@ const Features = () => {
         {features.map((feature) => (
           <div 
             key={feature.id} 
-            className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group border border-gray-100"
+            className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group border border-gray-100 relative overflow-hidden"
           >
+            {/* Subtle accent line */}
+            <div className="absolute top-0 left-0 w-full h-1 bg-primary/20 group-hover:bg-primary/40 transition-colors duration-300"></div>
+            
             <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-gray-100 transition-colors duration-300 text-primary">
               {feature.icon}
             </div>
@@ -66,10 +69,15 @@ const Features = () => {
       {/* Additional feature highlights */}
       <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Book Club CTA */}
-        <div className="bg-white rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+        <div className="bg-white rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden">
+          {/* Subtle accent line */}
+          <div className="absolute top-0 left-0 w-full h-1 bg-primary/20 group-hover:bg-primary/40 transition-colors duration-300"></div>
+          
           <div className="md:w-2/3">
             <div className="flex items-center gap-3 mb-4">
-              <FaBookOpen className="text-2xl text-primary" />
+              <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                <FaBookOpen className="text-xl text-primary" />
+              </div>
               <h3 className="text-2xl font-bold">Join Our Book Club</h3>
             </div>
             <p className="text-gray-600 mb-6 leading-relaxed">
@@ -88,10 +96,15 @@ const Features = () => {
         </div>
         
         {/* Gift Card CTA */}
-        <div className="bg-white rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+        <div className="bg-white rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden">
+          {/* Subtle accent line */}
+          <div className="absolute top-0 left-0 w-full h-1 bg-primary/20 group-hover:bg-primary/40 transition-colors duration-300"></div>
+          
           <div className="md:w-2/3">
             <div className="flex items-center gap-3 mb-4">
-              <FaGift className="text-2xl text-primary" />
+              <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                <FaGift className="text-xl text-primary" />
+              </div>
               <h3 className="text-2xl font-bold">Gift Cards</h3>
             </div>
             <p className="text-gray-600 mb-6 leading-relaxed">
@@ -111,7 +124,7 @@ const Features = () => {
       </div>
       
       {/* Trust indicators */}
-      <div className="mt-16 pt-8 border-t border-gray-100">
+      <div className="mt-20 pt-10 border-t border-gray-100">
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
           <div className="text-center">
             <div className="text-4xl font-bold text-primary mb-2">10K+</div>
