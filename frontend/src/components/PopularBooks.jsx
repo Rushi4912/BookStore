@@ -17,16 +17,22 @@ const PopularBooks = () => {
   const secondRowBooks = popularBooks.slice(Math.ceil(popularBooks.length / 2));
   
   return (
-    <section className='max-padd-container py-12 xl:py-24 relative overflow-hidden'>
-      {/* Background decorative element */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full -z-10"></div>
+    <section className='max-padd-container py-16 xl:py-28 relative overflow-hidden bg-white'>
+      {/* Background decorative elements */}
+      <div className="absolute top-0 right-0 w-64 h-64 bg-gray-50 rounded-full -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-48 h-48 bg-gray-50 rounded-full -z-10"></div>
       
-      <Title 
-        title1={'Popular'} 
-        title2={'Books'} 
-        title1Styles={'pb-10'} 
-        paraStyles={'!block'}
-      />
+      <div className="text-center mb-16">
+        <Title 
+          title1={'Popular'} 
+          title2={'Books'} 
+          title1Styles={'pb-4'} 
+          paraStyles={'!block max-w-2xl mx-auto'}
+        />
+        <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          Discover our most loved and bestselling titles, carefully selected for your reading pleasure.
+        </p>
+      </div>
       
       {/* First Row */}
       <div className="relative group">
@@ -65,7 +71,10 @@ const PopularBooks = () => {
         >
           {firstRowBooks.map((book) => (
             <SwiperSlide key={book._id} className="transition-transform duration-300 hover:scale-105">
-              <Item book={book} />
+              <div className="relative overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <Item book={book} />
+                <div className="absolute top-0 left-0 w-full h-1 bg-primary/20 group-hover:bg-primary/40 transition-colors duration-300"></div>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -111,7 +120,10 @@ const PopularBooks = () => {
         >
           {secondRowBooks.map((book) => (
             <SwiperSlide key={book._id} className="transition-transform duration-300 hover:scale-105">
-              <Item book={book} />
+              <div className="relative overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <Item book={book} />
+                <div className="absolute top-0 left-0 w-full h-1 bg-primary/20 group-hover:bg-primary/40 transition-colors duration-300"></div>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
