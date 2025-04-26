@@ -17,7 +17,7 @@ const PopularBooks = () => {
   const secondRowBooks = popularBooks.slice(Math.ceil(popularBooks.length / 2));
   
   return (
-    <section className='max-padd-container py-16 xl:py-28 relative overflow-hidden bg-white'>
+    <section className='max-padd-container py-16 xl:py-26 relative overflow-hidden bg-white'>
       {/* Background decorative elements */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-gray-50 rounded-full -z-10"></div>
       <div className="absolute bottom-0 left-0 w-48 h-48 bg-gray-50 rounded-full -z-10"></div>
@@ -29,7 +29,7 @@ const PopularBooks = () => {
           title1Styles={'pb-4'} 
           paraStyles={'!block max-w-2xl mx-auto'}
         />
-        <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+        <p className="text-gray-600 mt-7 mx-auto">
           Discover our most loved and bestselling titles, carefully selected for your reading pleasure.
         </p>
       </div>
@@ -67,7 +67,7 @@ const PopularBooks = () => {
             }
           }}
           modules={[Pagination, Autoplay, Navigation]}  
-          className='h-[455px] sm:h-[488px] xl:h-[499px] mt-5 mb-12'
+          className='h-[455px] sm:h-[488px] xl:h-[499px] mt-7 mb-11'
         >
           {firstRowBooks.map((book) => (
             <SwiperSlide key={book._id} className="transition-transform duration-300 hover:scale-105">
